@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CreatorAI</title>
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-M8KL1F65ER"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-M8KL1F65ER');
+    </script>
+</head>
+<body>
+    <div class="container">
+        <img src="{{ url_for('static', filename='logo.jpeg') }}" alt="Logo" style="width: 100px; height: auto; display: block; margin: 0 auto;">
+        <h1>Creator Companion</h1>
+        <h3>Search the <a href="https://www.youtube.com/@ColinAndSamir/" class="podcast-link" target="_blank" rel="noopener noreferrer">Colin and Samir Podcast</a> using the Creator Companion</h3>
+        <form id="queryForm">
+            <input type="text" name="query" placeholder="Enter your question" required>
+            <div class="button-container"> <!-- Add this div -->
+                <button id = "askButton" type="submit">Ask</button>
+                <button id = "luckyButton" type="button">I'm Feeling Lucky</button>
+            </div>
+            <div class="example-questions">
+                <p>Example questions:</p>
+                <span class="example-question">How did Andrew Schultz 3x his money with his special?</span>
+                <span class="example-question"> How does Mr. Beast capture attention and keep it?</span>
+                <span class="example-question">What is the concept of the creative pause?</span>
+                <span class="example-question">What is the future of the creative economy?</span>
+                <span class="example-question">How did casey neistat grow on youtube?</span>
+            </div>
+        </form>
+        <div class="spinner" id="spinner"></div>
+        <div class="response" id="response"></div>
+        <div class="contexts-container" id="contexts-container">
+            <p class="contexts-title">Contexts from Episodes:</p>
+        </div>
+        <div id="context-boxes">
+            <div class="context-box" id="context-box-1"></div>
+            <div class="context-box" id="context-box-2"></div>
+            <div class="context-box" id="context-box-3"></div>
+            <div class="context-box" id="context-box-4"></div>
+            <div class="context-box" id="context-box-5"></div>
+          </div>          
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+    <script src="{{ url_for('static', filename='questions.js') }}"></script>
+    <footer class="site-footer">
+        A project by <a href="https://www.zeeshanchatur.com" target="_blank">Zeeshan Chatur</a>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,230 @@
+body {
+  font-family: 'Poppins', Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #4a4a4a 0%, #0d0d0d 100%);
+  color: #ffffff;
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #1f1f1f;
+  width: 1000px;
+  padding: 50px;
+  border-radius: 12px;
+  box-shadow: 0 15px 16px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  margin: 50px auto;
+}
+
+input[type="text"] {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid #444;
+  background-color: #333;
+  color: #ffffff;
+  border-radius: 6px;
+  transition: border-color 0.3s ease;
+  margin-bottom: 10px;
+}
+
+input[type="text"]:focus {
+  border-color: #f4e954;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
+h1, h3 {
+  box-sizing: border-box;
+  font-weight: 600;
+  color: #f4e954;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+button {
+  background-color: #f4e954;
+  color: #202020;
+  border: none;
+  padding: 12px 24px;
+  font-size: 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+  background-color: #d8c43f;
+  transform: translateY(-1px);
+}
+
+button + button {
+  margin-left: 10px;
+}
+
+.response {
+  width: 100%;
+  height: 200px;
+  margin: 20px auto;
+  padding: 10px;
+  border: 1px solid #444;
+  background-color: #333;
+  color: #ffffff;
+  border-radius: 5px;
+  overflow-y: scroll;
+  text-align: left;
+}
+
+.context-container {
+  margin: 20px auto;
+  text-align: left;
+}
+
+.context-box-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.context-box {
+  margin: 25px auto;
+  padding: 10px;
+  border: 1px solid #444;
+  background-color: #333;
+  color: #ffffff;
+  border-radius: 5px;
+  max-width: 800px;
+  overflow: hidden;
+  text-align: left;
+  font-size: 14px;
+  display: none;
+}
+
+.context-box p {
+  margin-bottom: 1.2em;
+}
+
+.spinner {
+  display: none;
+  border: 4px solid rgba(255, 255, 255, 0.1);
+  border-left-color: #f4e954;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  animation: spin 1s linear infinite;
+  margin: 10px auto;
+}
+
+h1 {
+  font-weight: 600;
+  color: #f4e954;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+h3 {
+  font-weight: 200;
+  color: #ffffff;
+  margin-bottom: 10px;
+  text-align: center;
+  }
+  
+  .query-icon {
+  font-size: 24px;
+  margin-right: 10px;
+  vertical-align: middle;
+  }
+  
+  .contexts-title {
+  font-size: 30px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  text-align: center;
+  }
+  
+  @keyframes spin {
+  100% {
+  transform: rotate(360deg);
+  }
+  }
+  
+  .site-footer {
+  width: 100%;
+  padding: 15px;
+  text-align: center;
+  background-color: #1f1f1f;
+  border-top: 1px solid #444;
+  box-shadow: 0 -5px 10px rgba(0, 0, 0, 0.2);
+  margin-top: 30px;
+  }
+  
+  .site-footer a {
+  color: #f4e954;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  }
+  
+  .site-footer a:hover {
+  color: #d8c43f;
+  }
+  
+  .example-questions {
+  margin-top: 20px;
+  text-align: center;
+  }
+  
+  .example-questions p {
+  font-weight: 600;
+  margin-bottom: 10px;
+  }
+  
+  .example-question {
+  display: inline-block;
+  padding: 5px;
+  font-size: 14px;
+  margin: 4px;
+  color: #f4e954;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  border-radius: 6px;
+  margin: 5px;
+  }
+  
+  .example-question:hover {
+  background-color: #d8c43f;
+  color: #202020;
+  transform: translateY(-1px);
+  }
+  
+  .podcast-link {
+  color: #fdf799;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  }
+  
+  .podcast-link:hover {
+  color: #d8c43f;
+  }
+  
+  /* Responsive styles */
+  @media screen and (max-width: 1024px) {
+  .container {
+  width: 90%;
+  }
+  }
+  
+  
